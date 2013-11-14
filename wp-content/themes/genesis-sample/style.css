@@ -63,6 +63,23 @@
 
 */
 
+@font-face{
+font-family: 'SkolarWeb';
+src: url( 'https://fnt.webink.com/wfs/?drawer=69E2ADDC-67EB-49AE-8040-7DFDFF28F6D7&font=E3E82DBC-87D6-BA5B-D745-2846E3AA460D');
+font-weight:normal;font-style:normal;font-variant:normal;
+}
+
+@font-face{
+font-family: 'LFTEtica_Bold';
+src: url( 'https://fnt.webink.com/wfs/?drawer=69E2ADDC-67EB-49AE-8040-7DFDFF28F6D7&font=9461F33D-1A66-0EE6-5A75-B02A56CF1AA2');
+font-weight:normal;font-style:normal;font-variant:normal;
+}
+
+@font-face{
+font-family: 'SkolarWeb_Bold';
+src: url( 'https://fnt.webink.com/wfs/?drawer=69E2ADDC-67EB-49AE-8040-7DFDFF28F6D7&font=E91036C1-9B3E-398B-6BC8-3F30F4412BFB');
+font-weight:normal;font-style:normal;font-variant:normal;
+}
 
 /*
 HTML5 Reset
@@ -135,7 +152,7 @@ html {
 body {
 	background-color: #f5f5f5;
 	color: #666;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: Arial, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 300;
@@ -168,7 +185,7 @@ textarea:focus,
 }
 
 a {
-	color: #666;
+	color: #C2432F;
 	text-decoration: none;
 }
 
@@ -178,7 +195,8 @@ a img {
 }
 
 a:hover {
-	color: #333;
+	color: #C2432F;
+	text-decoration: underline;
 }
 
 p {
@@ -237,7 +255,7 @@ h4,
 h5,
 h6 {
 	color: #333;
-	font-family: Lato, sans-serif;
+	font-family: SkolarWeb, Georgia, serif;
 	font-weight: 700;
 	line-height: 1.2;
 	margin: 0 0 16px;
@@ -888,11 +906,11 @@ Site Header
 .header-image .site-header .wrap {
 	background: url(images/logo.png) no-repeat left;
 	padding: 0;
+	min-height: 80px;
 }
 
 .header-image .site-title a {
 	float: left;
-	min-height: 164px;
 	width: 100%;
 }
 
@@ -927,10 +945,11 @@ Site Navigation
 
 .genesis-nav-menu {
 	clear: both;
-	color: #999;
-	font-family: Lato, sans-serif;
+	color: #C2432F;
+	font-family: SkolarWeb, Georgia, sans-serif;
 	line-height: 1.5;
 	width: 100%;
+	font-size: 2rem;
 }
 
 .genesis-nav-menu .menu-item {
@@ -940,25 +959,27 @@ Site Navigation
 
 .genesis-nav-menu a {
 	border: none;
-	color: #999;
+	color: #fff;
 	display: block;
-	padding: 28px 24px;
-	padding: 2.8rem 2.4rem;
+	padding: 12px 8px;
+	padding: 1.2rem 0.8rem;
 	position: relative;
 }
 
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #333;
+	color: #fff;
+	background-color: #000;
 }
 
 .genesis-nav-menu .sub-menu .current-menu-item > a {
-	color: #999;
+	color: #fff;
+	background-color: #000;	
 }
 
 .genesis-nav-menu > .menu-item > a {
-	text-transform: uppercase;
+	
 }
 
 .genesis-nav-menu .sub-menu {
@@ -975,7 +996,8 @@ Site Navigation
 }
 
 .genesis-nav-menu .sub-menu a {
-	background-color: #fff;
+	background-color: #3CB0C8;
+	color: #fff;
 	border: 1px solid #eee;
 	border-top: none;
 	font-size: 14px;
@@ -984,6 +1006,11 @@ Site Navigation
 	padding: 1.6rem 2rem;
 	position: relative;
 	width: 200px;
+}
+
+.genesis-nav-menu .sub-menu a:hover {
+	background-color: #000;
+	color: #fff;
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
@@ -1046,16 +1073,12 @@ Site Navigation
 --------------------------------------------- */
 
 .nav-primary {
-	background-color: #333;
+	background-color: #C2432F;
 }
 
 .nav-primary a:hover,
 .nav-primary .current-menu-item > a {
 	color: #fff;
-}
-
-.nav-primary .sub-menu a:hover {
-	color: #333;
 }
 
 /* Secondary Navigation
@@ -1414,6 +1437,132 @@ Site Footer
 	margin-bottom: 0;
 }
 
+/* Fuego */
+
+.fuego-itembox-container a {
+    color: #808080;
+    text-decoration: none !important;
+}
+
+.fuego-itembox {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 0 10px 10px;
+    box-shadow: 4px 4px 4px #CCCCCC;
+    float: left;
+    margin: 0 0 30px;
+    padding: 0;
+    width: 310px;
+	border-top: 10px solid #C2432F;
+}
+
+.fuego-itembox-rankbox {
+    border-bottom: 0 solid #F5F5F5;
+    border-bottom-left-radius: 10px;
+    border-left: 0 solid #F5F5F5;
+    border-top-right-radius: 10px;
+    color: #fff;
+    font-size: 0.7em;
+    height: 28px;
+    margin-top: -9px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 30px;
+    z-index: 99999;
+	background-color: #C2432F;
+}
+
+.fuego-itembox.rank-1 {
+	border-top-color: #206579;
+}
+
+.fuego-itembox.rank-1 .fuego-itembox-rankbox {
+	background-color: #206579;
+}
+
+.fuego-itembox.rank-2 {
+	border-top-color: #C2792F;
+}
+
+.fuego-itembox.rank-2 .fuego-itembox-rankbox {
+	background-color: #C2792F;
+}
+
+.fuego-itembox.rank-3 {
+	border-top-color: #238F44;
+}
+
+.fuego-itembox.rank-3 .fuego-itembox-rankbox {
+	background-color: #238F44;
+}
+
+.fuego-itembox.rank-4 {
+	border-top-color: #206579;
+}
+
+.fuego-itembox.rank-4 .fuego-itembox-rankbox {
+	background-color: #206579;
+}
+
+.fuego-itembox.rank-5 {
+	border-top-color: #E17261;
+}
+
+.fuego-itembox.rank-5 .fuego-itembox-rankbox {
+	background-color: #E17261;
+}
+
+.fuego-itembox-headlinebox {
+    padding: 15px 20px 20px;
+}
+
+
+.fuego-itembox-provider-wrapper {
+    margin-bottom: 5px;
+}
+
+.fuego-itembox-favicon {
+    border: medium none;
+    border-radius: 2px;
+    margin: 0 2px 3px 0;
+    vertical-align: middle;
+}
+
+.fuego-itembox-provider {
+    color: #808080;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.fuego-itembox-headline {
+    color: #333333;
+    font-size: 1.1em;
+    line-height: 1.2;
+}
+
+.fuego-itembox-tweet {
+    margin: 0;
+    padding: 20px;
+}
+
+.fuego-itembox-tweet-image {
+    border-radius: 3px;
+    float: right;
+    margin: 5px 0 10px 10px;
+}
+
+.fuego-itembox-tweet-text {
+    font-size: 0.7em;
+}
+
+.fuego-item-handle {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+
 
 /*
 Media Queries
@@ -1426,7 +1575,6 @@ Media Queries
 
 	.header-image .site-header .wrap {
 		background: url(images/logo@2x.png) no-repeat left;
-		background-size: 320px 164px;
 	}
 
 }
@@ -1533,8 +1681,8 @@ Media Queries
 	.genesis-nav-menu a,
 	.genesis-nav-menu > .first > a,
 	.genesis-nav-menu > .last > a {
-		padding: 20px 16px;
-		padding: 2rem 1.6rem;
+		padding: 10px 6px;
+		padding: 1rem 0.8rem;
 	}
 
 	.site-header .search-form {
@@ -1588,5 +1736,10 @@ Media Queries
 		margin: 0;
 		width: 100%;
 	}
+	
+	.header-image .site-header .wrap {
+		background-image: url(images/logo-little.png);
+		background-position: center 20px;
+	}	
 
 }
