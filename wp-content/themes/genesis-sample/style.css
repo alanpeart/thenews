@@ -1444,6 +1444,10 @@ Site Footer
     text-decoration: none !important;
 }
 
+.fuego-itembox-container a:hover .fuego-itembox {
+	background-color: #F5F5F5;
+}
+
 .fuego-itembox {
     background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 0 10px 10px;
